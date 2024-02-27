@@ -1,11 +1,12 @@
 import React from 'react'
 import './footer.scss'
+import icon from '../../../assets/icons/icon.jpg'
 function Footer() {
   return (
     <div className='footer'>
       <div className='container'>
         <div className='logo_part'>
-
+          <a href='/'><img src={icon} alt='icon'/></a>
         </div>
         <div className='socials'>
           <a href='/' target='_blank' className='social'>

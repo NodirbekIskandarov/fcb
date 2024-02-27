@@ -6,11 +6,14 @@ import { ReactComponent as Ball } from "../../../assets/icons/ball.svg";
 import { ReactComponent as Profile } from "../../../assets/icons/profile.svg";
 import { ReactComponent as Kubok } from "../../../assets/icons/kubok.svg";
 import { ReactComponent as Person } from "../../../assets/icons/person.svg";
+import  icon  from "../../../assets/icons/icon.jpg";
 function Navbar() {
   return (
     <div className="navbar">
       <div className="navbar_container">
-        <div className="icon_part"></div>
+        <div className="icon_part">
+          <a href="/"><img src={icon} alt="logo"/></a>
+        </div>
         <div className="menu_part">
           <Link to="/" className="link">
             <div className="text_part">

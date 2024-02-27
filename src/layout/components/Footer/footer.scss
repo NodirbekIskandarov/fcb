@@ -1,0 +1,37 @@
+.footer {
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    .container {
+        width: 1300px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo_part {
+            width: 50%;
+        }
+        .socials {
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .social {
+                text-decoration: none;
+                width: 25%;
+                height: 40px;
+                padding: 15px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: rgb(50, 50, 50);
+                img {
+                    width: 30%;
+                }
+                span {
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -18,13 +18,13 @@ function Navbar() {
               <span>Asosiy</span>
             </div>
           </Link>
-          <Link to="/" className="link">
+          <Link to="/statistics" className="link">
             <div className="text_part">
               <Kubok className="icon"/>
               <span>O'yinlar statistikasi</span>
             </div>
           </Link>
-          <Link to="/" className="link">
+          <Link to="/all-players" className="link">
             <div className="text_part">
               <Ball className="icon"/>
               <span>Bizning futbolchilar</span>

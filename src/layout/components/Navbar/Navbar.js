@@ -35,13 +35,13 @@ function Navbar() {
           </Link>
           <Link to="/" className="link">
             <div className="text_part">
-              <Profile className="icon"/>
+              <Person className="icon"/>
               <span>Profil</span>
             </div>
           </Link>
         </div>
         <div className="avatar_part">
-          <button><Person className="icon"/></button>
+          <button><Profile className="icon"/></button>
         </div>
       </div>
     </div>

@@ -1,9 +1,48 @@
-import React from 'react'
-import './navbar.scss'
+import React from "react";
+import "./navbar.scss";
+import { Link } from "react-router-dom";
+import { ReactComponent as Home } from "../../../assets/icons/home.svg";
+import { ReactComponent as Ball } from "../../../assets/icons/ball.svg";
+import { ReactComponent as Profile } from "../../../assets/icons/profile.svg";
+import { ReactComponent as Kubok } from "../../../assets/icons/kubok.svg";
+import { ReactComponent as Person } from "../../../assets/icons/person.svg";
 function Navbar() {
   return (
-    <div className='navbar'>Navbar</div>
-  )
+    <div className="navbar">
+      <div className="navbar_container">
+        <div className="icon_part"></div>
+        <div className="menu_part">
+          <Link to="/" className="link">
+            <div className="text_part">
+              <Home className="icon"/>
+              <span>Asosiy</span>
+            </div>
+          </Link>
+          <Link to="/" className="link">
+            <div className="text_part">
+              <Kubok className="icon"/>
+              <span>O'yinlar statistikasi</span>
+            </div>
+          </Link>
+          <Link to="/" className="link">
+            <div className="text_part">
+              <Ball className="icon"/>
+              <span>Bizning futbolchilar</span>
+            </div>
+          </Link>
+          <Link to="/" className="link">
+            <div className="text_part">
+              <Profile className="icon"/>
+              <span>Profil</span>
+            </div>
+          </Link>
+        </div>
+        <div className="avatar_part">
+          <button><Person className="icon"/></button>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Navbar
+export default Navbar;

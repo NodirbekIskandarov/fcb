@@ -1,3 +1,59 @@
 .navbar {
-    color: red;
+    width: 100%;
+    padding: 10px 0;
+    background-color: black;
+    .navbar_container {
+        width: 1300px;
+        background-color: transparent;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .icon_part {
+            width: 10%;
+        }
+        .menu_part {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .link {
+                width: 24%;
+                border: 1px solid green;
+                text-align: center;
+                padding: 10px 0;
+                color: white;
+                text-decoration: none;
+                border-radius: 10px;
+                background-color: rgb(54, 54, 54);
+                font-size: 16px;
+                .text_part {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .icon {
+                        color: white;
+                    }
+                    span {
+                        margin-left: 10px;
+                    }
+                }
+                &:hover {
+                    background-color: green;
+                    transition: 0.5s;
+                }
+            }
+
+        }
+        .avatar_part {
+            width: 10%;
+            text-align: center;
+            button {
+                border: none;
+                background-color: transparent;
+                margin: 0 auto;
+                cursor: pointer;
+            }
+        }
+    }
 }

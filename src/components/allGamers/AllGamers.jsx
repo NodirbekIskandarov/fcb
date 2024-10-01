@@ -10,6 +10,7 @@ function AllGamers() {
     })
     .catch(error => {
       console.log(error)
+      
     })
   }, [])
   return (
